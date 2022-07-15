@@ -1,0 +1,129 @@
+.rodape{
+    align-items: center;
+    justify-content: center;
+    height: 368px;
+    display: flex;
+    background: #EAF2FD;;
+}
+.rodape__interno{
+    justify-content: space-between;
+    width: 1136px;
+    height: 240px;
+    display: flex;
+}
+.rodape__empresa{
+    justify-content: space-around;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.rodape__empresa a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contato__input{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 240px;
+}
+.nome{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A2A2A2;
+    text-align: justify;
+    margin:8px 0 16px 0;
+    height: 56px;
+}
+.mensagem{    
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: #A2A2A2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    height: 82px;
+}
+.rodape__botao{
+    background: #2A7AE4;
+    width: 165px;
+    height: 51px;
+    margin-top: 8px;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+}
+.desenvolvedor{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    height: 102px;
+}
+.desenvolvedor__nome{
+    color: #464646;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width:768px) and (max-width:950px){
+    .rodape{
+    height: 364px;
+    }    
+    .rodape__interno{
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        flex-wrap: wrap;
+        height: 300px;
+    }
+    .contato__input{
+        width: 434px;
+        height: 229px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .rodape__botao{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        width: 151px;
+        height: 40px;
+    }
+    .rodape__empresa{
+        width: 254px;
+        gap: 24px;
+    }
+}
+@media(max-width:767px){
+    .rodape{
+        height: 553px;
+    }
+    .rodape__interno{
+        gap: 16px;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+    .contato__input{
+        width: 100%;
+    }
+    .rodape__empresa{
+        gap: 16px;
+    }
+}

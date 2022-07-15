@@ -1,0 +1,123 @@
+.principal{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 619px;
+    background: #f5f5f5;
+}
+.section_produtos{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    gap: 16px;
+    flex-direction: column;
+    display: flex;
+    width: 559px;
+    height: 491px;
+    justify-content: space-around;
+}
+.titulo_padrao{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+.imagem{
+    gap: 16px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.imagem__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#ffffff ;
+    width: 45%;
+    height: 120px;
+}
+.imagem__img{
+    width: 45%;
+    height: 95px;
+}
+.imagem__botao{
+    width: 50%;
+    text-align: center;
+}
+.label{
+    font-weight: 600;
+    padding: 20px;
+    cursor: pointer;
+    color: #2A7AE4;
+    background:#ffffff;
+    border: 1.5px solid  #2A7AE4;
+}
+.input{
+    width: 555px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.validador{
+    width: 559px;
+    border: none;
+    color: #ffffff;
+    height: 51px;
+    background: #2A7AE4;
+    cursor: pointer;
+}
+@media(min-width:768px) and (max-width:950px){
+    .principal{
+    height: 543px;
+    }
+    .form{
+        width: 704px;
+        height: 479px;
+    }
+    .titulo_padrao{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }   
+    .input{
+        width: 100%;
+    }
+    .validador{
+        width: 704px;
+    }
+}
+@media(max-width:767px){
+    #btnLogin{
+        width: auto;
+    }
+    .principal{
+        height: 511px;
+    }
+    .form{
+        width: 328px;
+        height: 479px;
+    }
+    .titulo_padrao{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    } 
+    .label{
+        padding: 10px;
+    }   
+    .input-container{
+        width:100%;
+        text-align: center;
+    }
+    .input{
+        width: 90%;
+    }
+    .validador{
+        width: 90%;
+    }
+}

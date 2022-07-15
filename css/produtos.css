@@ -1,0 +1,123 @@
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produtos__categoria{
+    margin-top: 60px;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.produtos__categoria__texto{
+    color: #464646;
+    gap: 8px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+.produtos__categoria__botao{
+    display: flex;
+    width: 98px;
+    height: 24px;
+}
+.produtos__categoria__botao-b{
+    border:none;
+    width: 100%;
+    background: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    cursor: pointer;
+}
+.produtos__categoria__botao-b img{
+    width: 16px;
+    height:14px;
+}
+.produtos__divs{
+    margin-top: 16px;
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+    height: 252px;
+}.produtos__divs__div{
+    width: 176px;
+    height: 252px;
+}
+.produtos__divs__div__descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: #464646;  
+}
+.produtos__divs__div__descricao small{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.produtos__divs__div__descricao p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.produtos__divs__div__botao{
+    padding: unset;
+    border: none;
+    background: none;
+    color: #2A7AE4;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;   
+}
+
+@media(min-width:768px) and (max-width:950px){
+    .produtos__categoria{
+        margin-top: 32px;
+        width: 704px;
+    }
+    .produtos__divs{
+        width: 704px;
+    }
+    .produtos__categoria__texto{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .produtos__divs__div:nth-child(n + 5){
+        display: none;
+    }
+    .produtos__divs__div{
+        width: 164px;
+    }
+    .produtos__divs__div img{
+        width: 164px;
+        height: 174px;
+    }
+}   
+@media (max-width:767px){
+    .produtos__categoria{
+    margin-top: 16px;      
+    }
+    .produtos__divs{
+        height: auto;
+        width: 350px;
+        flex-wrap: wrap;
+    }
+    .produtos__divs__div{
+        width: 156px;
+    }
+    .produtos__divs__div:nth-child(n + 5){
+        display: none;
+    }
+    .produtos__divs__div img{
+        width: 156px;
+    }
+    .produtos__divs__div__botao{
+        font-size: 14px;
+        line-height: 16px;
+    }
+} 

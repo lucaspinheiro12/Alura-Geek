@@ -1,0 +1,81 @@
+.banner{
+    background-image: url("../imagens/banner.jpg");
+    height: 352px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.banner__texto{
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+    margin-left: 9.46%;
+    height: 170px;
+}
+.banner__texto h2{
+    height: 61px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+}
+.banner__texto p{
+    color: #FFFFFF;
+    height: 26px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+.banner__botao{
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #2A7AE4;
+    width: 130px;
+    height: 51px;
+}
+
+@media(min-width:768px) and (max-width:950px){
+    .banner{
+        height: 352px;
+        background-size:100% 100%; 
+        background-repeat: no-repeat;
+    }
+    .banner__botao{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        width: 119px;
+        height: 40px;
+    }
+}
+@media (max-width:767px){
+    .banner{
+    height: 192px;
+    background-size:100% 100%; 
+    background-repeat: no-repeat;
+    }
+    .banner__texto{
+        margin-bottom: 16px;
+        gap: 8px;
+        width: 328px;
+        height: 98px;
+    }
+    .banner__texto h2{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    }
+    .banner__texto p{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,129 @@
+html {
+    width:auto;
+    font-family: 'Raleway', sans-serif;
+    background: #FFFFFF;
+}
+.topo__container{
+    height: 115px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.topo__div{
+    align-items: center;
+    display: flex;
+}
+.topo__div__img{
+    height: 50px;
+    margin-right: 32px;
+} 
+.topo__pesquisa{
+    border-radius: 20px;
+    background: #F5F5F5;
+    width:393px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.topo__pesquisa__input{
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    color: #A2A2A2;
+    padding-left: 16px;
+    width: 90%;
+    background: #F5F5F5;
+}
+.topo__pesquisa__input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.topo__pesquisa__lupa__button{
+    width: 6%;
+    border: none;
+    background-image: url("../imagens/Vector2.png");
+    background-repeat: no-repeat;
+    cursor: pointer; 
+}
+.topo__login{
+    display: flex;
+}
+.topo__login__button{
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    width: 182px;
+    height: 51px;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+}
+
+@media(min-width:768px) and (max-width:950px){
+    .topo__container{
+        height: 72px;
+        justify-content: space-around;
+    }
+    .topo__div__img{
+            height: 28px;
+    }
+    .topo__pesquisa{
+        width: 272px;
+        height: 40px;
+    } 
+    .topo__login__button{
+        width: 166px;
+        height: 40px;       
+    }   
+}
+
+@media(max-width:767px){
+    .topo__container{
+        display: flex;
+        width: 360px;
+    }
+    .topo__pesquisa{
+        width: 17px;
+        height: 17px;
+        display: flex;
+        flex-direction: column;
+        background: none;
+    }
+    .topo__pesquisa__input{
+        display: none;
+    }
+    .topo__div:hover >
+    .topo__pesquisa .topo__pesquisa__input{
+        margin: 25px 300px 0 0;
+        width: 250px;
+        align-items: center;
+    }
+    .topo__pesquisa:hover >
+    .topo__pesquisa__input {
+        display: block;
+    }
+    .topo__pesquisa__lupa__button{
+        padding: 10px;
+        background-color: #F5F5F5;
+        order: -1;
+        width: 17px;
+        height: 17px;
+    }
+    .topo__div__img{
+        width: 100px;
+        height: 28px;
+    }
+    .topo__div{
+        order: 2;
+    }
+    .topo__login{
+        order: 1;
+    }
+    .topo__login__button{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        width: 133px;
+        height: 40px;
+    }
+}

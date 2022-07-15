@@ -1,0 +1,96 @@
+.produtosAll{
+    background: #f5f5f5;
+}
+.prodtosAll__inicio{
+    display: flex;
+    justify-content: center;
+}
+.produtosAll__inicio-d{
+    margin-top: 70px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.produtosAll__inicio-d p{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+.produtosAll__botao{
+    cursor: pointer;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 164px;
+    height: 51px;
+    background: #2A7AE4;
+}
+.produdosAll__todos{
+    display: flex;
+    justify-content: center;
+}
+.produdosAll__todos .produtos__divs{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 1136px;
+    height: 875px;;
+    flex-wrap: wrap;
+}
+@media(min-width:768px) and (max-width:950px){
+    .produtosAll{
+    margin-bottom: 15px;
+    }
+    .produtosAll__inicio-d{
+        margin-top: 39px;
+    }
+    .produdosAll__todos{
+        align-items: center;
+    }
+    .produdosAll__todos .produtos__divs {
+        margin-left: 35px;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        display: flex;
+    }
+    .produdosAll__todos .produtos__divs .produtos__divs__div:nth-child(n + 5){
+        display: block;
+    }
+}
+@media (max-width:767px){
+    .produtosAll__inicio-d{
+        margin-top: 32px;
+        flex-direction: column;
+    }
+    .produtosAll__inicio-d p{
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px
+    }
+    .produtosAll__botao{
+        width: 151px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .produdosAll__todos{
+        height: auto;
+    }
+    .produdosAll__todos .produtos__divs{
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 360px;
+        display: flex;
+    } 
+    .produdosAll__todos .produtos__divs .produtos__divs__div:nth-child(n + 5){
+        display: block;
+    }
+}

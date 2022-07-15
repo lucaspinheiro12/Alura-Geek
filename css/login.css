@@ -1,0 +1,51 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 428px;
+    background: #f5f5f5;
+}
+.login__input{
+    justify-content: space-between;
+    display: flex;
+    width: 423px;
+    height: 291px;
+    flex-direction: column;
+    align-items: center;
+}
+.login__input h1{
+    color: #464646;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.login__input__entrada{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: #A2A2A2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background: #ffffff;
+    width: 423px;
+    height: 63.13px;
+}
+.login__input__botao{
+    width: 423px;
+    border-radius: 4px;
+    border:none;
+    color: #f5f5f5;
+    background: #2A7AE4;
+    height: 62px;
+}
+@media(max-width:767px){
+    .login__input__entrada{
+        width: 275px;
+        height: 41px;
+    }
+    .login__input__botao{
+        width: 109px;
+        height: 40px;
+    }
+}
