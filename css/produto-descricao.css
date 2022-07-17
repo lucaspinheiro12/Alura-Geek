@@ -86,8 +86,14 @@ background: #f5f5f5;
 }
 @media (max-width:767px){
     .produto-caixa{
-        width: 360px;
+        width: auto;
         height: 413px;
+    }
+    .produtos-classe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
     }
     .produto-descricao{
         display: flex;
