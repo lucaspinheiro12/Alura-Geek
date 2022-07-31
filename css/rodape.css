@@ -34,6 +34,13 @@
     width: 560px;
     height: 240px;
 }
+.input-mensagem-erro{
+    display: none;
+}
+.input-container--invalido .input-mensagem-erro {
+    color: #f00;
+    display: block;
+}
 .nome{
     box-shadow: 0 0 0 0;
     border: 0 none;
