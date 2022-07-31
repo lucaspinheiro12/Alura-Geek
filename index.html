@@ -40,12 +40,12 @@
                 <div class="banner__texto">
                     <h2>Dezembro Promocional</h2>
                     <p>Produtos selecionados com até 33% de desconto</p>
-                    <button class="banner__botao">Ver produtos</button>
+                    <a href="#todosProdutos"> <button class="banner__botao">Ver produtos</button> </a>
                 </div>
             </section>
         </header>
         <main>
-            <section class="produtos">
+            <section id="todosProdutos" class="produtos">
                 <div class="produtos__categoria">
                     <div class="produtos__categoria__texto">
                         <h2>Star Wars</h2>
@@ -263,8 +263,10 @@
                     <form class="contato">
                         <div class="contato__input">
                             <p> Fale conosco</p>
-                            <input type="text" class="nome" placeholder="Nome">
-                            <textarea type="text" class="mensagem" cols="30" rows="10" placeholder="Escreva a sua mensagem"></textarea>
+                            <input type="text" class="nome" placeholder="Nome" data-tipo="nome" pattern="[/A-Za-z'\s+].{1,40}"title="teste" required>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                            <textarea type="text" class="mensagem" cols="30" rows="10" placeholder="Escreva a sua mensagem" maxlength="120" data-tipo="mensagem" required></textarea>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
                             <button class="rodape__botao">Enviar Mensagem</button>
                         </div>    
                     </form>
@@ -277,4 +279,6 @@
                 </div>
                 </section> 
         </footer>
+        <script src="./js/validacaoInput.js"></script>
     </body>
+</html>   
