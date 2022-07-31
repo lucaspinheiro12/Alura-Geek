@@ -14,6 +14,7 @@
     align-items: center;
 }
 .login__input h1{
+    margin-bottom: 1rem;
     color: #464646;
     font-weight: 700;
     font-size: 18px;
@@ -32,12 +33,14 @@
     height: 63.13px;
 }
 .login__input__botao{
+    margin-top: 1rem;
     width: 423px;
     border-radius: 4px;
     border:none;
     color: #f5f5f5;
     background: #2A7AE4;
     height: 62px;
+    cursor: pointer; 
 }
 @media(max-width:767px){
     .login__input__entrada{
