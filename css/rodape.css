@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     width: 560px;
-    height: 240px;
+    height: 275px;
 }
 .input-mensagem-erro{
     display: none;
@@ -40,8 +40,15 @@
 .input-container--invalido .input-mensagem-erro {
     color: #f00;
     display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 19px;
+}
+.contato__input__div:nth-child(3){
+    margin-top: 1rem;
 }
 .nome{
+    width: 100%;
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -50,10 +57,11 @@
     line-height: 16px;
     color: #A2A2A2;
     text-align: justify;
-    margin:8px 0 16px 0;
+    margin:8px 0 0 0;
     height: 56px;
 }
-.mensagem{    
+.mensagem{  
+    width: 100%;  
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -101,7 +109,6 @@
     }
     .contato__input{
         width: 434px;
-        height: 229px;
         font-weight: 400;
         line-height: 20px;
     }
@@ -118,7 +125,11 @@
     }
 }
 @media(max-width:767px){
+    .contato{
+        height:300px;
+    }
     .rodape{
+        padding-top: 1rem;
         height: 553px;
     }
     .rodape__interno{
