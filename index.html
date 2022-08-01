@@ -263,10 +263,14 @@
                     <form class="contato">
                         <div class="contato__input">
                             <p> Fale conosco</p>
-                            <input type="text" class="nome" placeholder="Nome" data-tipo="nome" pattern="[/A-Za-z'\s+].{1,40}"title="teste" required>
-                            <span class="input-mensagem-erro">Este campo não está válido</span>
-                            <textarea type="text" class="mensagem" cols="30" rows="10" placeholder="Escreva a sua mensagem" maxlength="120" data-tipo="mensagem" required></textarea>
-                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                            <div class="contato__input__div">
+                                <input type="text" class="nome" placeholder="Nome" data-tipo="nome" pattern="[/A-Za-z'\s+].{1,40}"title="teste" required>
+                                <span class="input-mensagem-erro">Este campo não está válido</span>
+                            </div>
+                            <div class="contato__input__div">
+                                <textarea type="text" class="mensagem" cols="30" rows="10" placeholder="Escreva a sua mensagem" maxlength="120" data-tipo="mensagem" required></textarea>
+                                <span class="input-mensagem-erro">Este campo não está válido</span>
+                            </div>    
                             <button class="rodape__botao">Enviar Mensagem</button>
                         </div>    
                     </form>
