@@ -120,7 +120,7 @@
             <div class="rodape">
                 <div class="rodape__interno">
                     <div class="logo">
-                        <img src="imagens/Logo.png" alt="">
+                        <img src="../imagens/Logo.png" alt="">
                     </div>
                     <div class="rodape__empresa">
                         <a href="#">Quem somos nós</a>
@@ -133,8 +133,14 @@
                     <form class="contato">
                         <div class="contato__input">
                             <p> Fale conosco</p>
-                            <input type="text" class="nome" placeholder="Nome">
-                            <textarea type="text" class="mensagem" cols="30" rows="10" placeholder="Escreva a sua mensagem"></textarea>
+                            <div class="contato__input__div">
+                                <input type="text" class="nome" placeholder="Nome" data-tipo="nome" pattern="[/A-Za-z'\s+].{1,40}"title="teste" required>
+                                <span class="input-mensagem-erro">Este campo não está válido</span>
+                            </div>
+                            <div class="contato__input__div">
+                                <textarea type="text" class="mensagem" cols="30" rows="10" placeholder="Escreva a sua mensagem" maxlength="120" data-tipo="mensagem" required></textarea>
+                                <span class="input-mensagem-erro">Este campo não está válido</span>
+                            </div>    
                             <button class="rodape__botao">Enviar Mensagem</button>
                         </div>    
                     </form>
@@ -147,4 +153,6 @@
                 </div>
                 </section> 
         </footer>
-    </body>  
+        <script src="../js/validacaoInput.js"></script>
+    </body>
+</html>    
