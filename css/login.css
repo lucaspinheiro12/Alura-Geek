@@ -20,6 +20,9 @@
     font-size: 18px;
     line-height: 21px;
 }
+.login__input__div:nth-child(3){
+    margin-top: 1rem;
+}
 .login__input__entrada{
     box-shadow: 0 0 0 0;
     border: 0 none;
