@@ -2,7 +2,7 @@
     const botaoLogin = document.querySelector('[data-tipo="botao"]')
     const inputLoginE = document.querySelector('[data-tipo="email"]')
     const inputLoginS = document.querySelector('[data-tipo="senha"]')
-    const email = 'lulu@email.com'.replace()
+    const email = 'lucas@email.com'.replace()
     const senha = 'lucas123'.replace()
 
     botaoLogin.addEventListener('click', (evento)=>{

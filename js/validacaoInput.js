@@ -1,7 +1,6 @@
 const inputs = document.querySelectorAll("input")
 const textArea = document.querySelectorAll("textarea")
 
-
 const valitaTextArea = (textarea) =>{
 
     const tipoDetext = textarea.dataset.tipo
@@ -49,7 +48,20 @@ const mensagensDeErro = {
     },
     senha:{
 		valueMissing:"O campo de senha não pode estar vazio.",
-	}    
+	},
+    imagem:{
+        valueMissing:"O campo de imagem não pode estar vazio.",
+    },    
+    nomeProdutos:{
+        valueMissing:"O campo nome não pode estar vazio.",
+    },
+    preco:{
+        valueMissing:"O campo preço não pode estar vazio.",
+    },
+    descricao:{
+        valueMissing:"O campo descrição não pode estar vazio.",
+        patternMismatch:'O campo de descrição deve contar no minimo 150 caracteres'
+    }
 }  
 
 
