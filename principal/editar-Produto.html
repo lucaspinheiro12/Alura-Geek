@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/container.css">
+        <link rel="stylesheet" href="../css/banner.css">
+        <link rel="stylesheet" href="../css/produtos.css">
+        <link rel="stylesheet" href="../css/rodape.css">
+        <link rel="stylesheet" href="../css/novo-produtos.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <title>Alura Geek | Editar Produto</title>
+    </head>
+    <body>
+        <header>
+            <section class="topo__container">
+                <a href="index.html">
+                    <img src="../imagens\Logo.png" class="topo__div__img" alt="logo">
+                </a>
+                <div class="topo__login">
+                    <a href="./todosProdutos-editar.html">
+                        <button type="button" id="btnLogin" class="topo__login__button">Menu administrador</button>
+                    </a>
+                </div>
+            </section>    
+        </header>
+        <main class="principal">    
+            <section class="section_produtos">
+                <form class="form" action="#" data-form>
+                    <h2 class="titulo_padrao">Editar Produto</h2>
+                    <div class="imagem input-container">
+                        <input name="arquivo" class="input" id="arquivo" type="text" placeholder="Imagem"  data-tipo="imagem" required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input class="input" minlength="4" name="nomeProdutos" type="text" placeholder="Nome do produto"
+                        data-tipo="nomeProdutos"  required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input class="input" name="precoProdutos" type="text" placeholder="Preço do produto" data-tipo="preco" required>
+                        <span class="input-mensagem-erro"></span> 
+                    </div>
+                    <div class="input-container">
+                        <textarea   class="input" minlength="150" name="descricaoProdutos" type="text" placeholder="Descrição do produto" data-tipo="descricao" required></textarea>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <input class="validador" type="submit" value="Editar produto">
+                </form>
+            </section>
+        </main >        
+        <footer>
+            <div class="rodape">
+                <div class="rodape__interno">
+                    <div class="logo">
+                        <img src="../imagens/Logo.png" alt="">
+                    </div>
+                    <div class="rodape__empresa">
+                        <a href="#">Quem somos nós</a>
+                        <a href="#">Politica de privacidade</a>
+                        <a href="#">Programa de fidelidade</a>
+                        <a href="#">Nossas lojas</a>
+                        <a href="#">Quero ser franqueado</a>
+                        <a href="#">Anuncie aqui</a>
+                    </div>
+                    <form class="contato">
+                        <div class="contato__input">
+                            <p> Fale conosco</p>
+                            <div class="contato__input__div">
+                                <input type="text" class="nome" placeholder="Nome" data-tipo="nome" pattern="[/A-Za-z'\s+].{1,40}"title="teste" required>
+                                <span class="input-mensagem-erro">Este campo não está válido</span>
+                            </div>
+                            <div class="contato__input__div">
+                                <textarea type="text" class="mensagem" cols="30" rows="10" placeholder="Escreva a sua mensagem" maxlength="120" data-tipo="mensagem" required></textarea>
+                                <span class="input-mensagem-erro">Este campo não está válido</span>
+                            </div>    
+                            <button class="rodape__botao">Enviar Mensagem</button>
+                        </div>    
+                    </form>
+                </div>    
+            </div>    
+                <section class="desenvolvedor">
+                    <div class="desenvolvedor__nome">
+                        <p> &copy;Desenvolvido por Lucas Pinheiro</p>
+                        <p>2022</p>
+                </div>
+                </section> 
+        </footer>
+    </body>  
+    <script src="../js/validacaoInput.js"></script>
+    <script type="module" src="../js/editarProduto.js"></script>
+</html>      
