@@ -58,6 +58,17 @@ html {
     color: #2A7AE4;
     border: 1px solid #2A7AE4;
 }
+.produtosProcurados{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    display: flex;
+    height:auto;
+    padding-bottom: 50px;
+}
+.produtosProcurados .produtos__divs__div{
+    height: auto;
+}
 
 @media(min-width:768px) and (max-width:950px){
     .topo__container{
@@ -80,34 +91,24 @@ html {
 @media(max-width:767px){
     .topo__container{
         display: flex;
-        width: 360px;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+    .topo__container__pesquisa{
+        order:2;
     }
     .topo__pesquisa{
-        width: 17px;
-        height: 17px;
-        display: flex;
-        flex-direction: column;
-        background: none;
+    width: 250px;
     }
-    .topo__pesquisa__input{
-        display: none;
-    }
-    .topo__div:hover >
-    .topo__pesquisa .topo__pesquisa__input{
-        margin: 25px 300px 0 0;
-        width: 250px;
-        align-items: center;
-    }
-    .topo__pesquisa:hover >
-    .topo__pesquisa__input {
-        display: block;
-    }
+
     .topo__pesquisa__lupa__button{
         padding: 10px;
         background-color: #F5F5F5;
-        order: -1;
         width: 17px;
         height: 17px;
+    }
+    .topo__pesquisa__input{
+        width: auto;
     }
     .topo__div__img{
         width: 100px;

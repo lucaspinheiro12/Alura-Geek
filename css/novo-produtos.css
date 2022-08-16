@@ -23,12 +23,7 @@
     line-height: 38px;
     color: #464646;
 }
-.imagem{
-    gap: 16px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-}
+
 .imagem__input{
     display: flex;
     flex-direction: column;
@@ -41,18 +36,7 @@
     width: 45%;
     height: 95px;
 }
-.imagem__botao{
-    width: 50%;
-    text-align: center;
-}
-.label{
-    font-weight: 600;
-    padding: 20px;
-    cursor: pointer;
-    color: #2A7AE4;
-    background:#ffffff;
-    border: 1.5px solid  #2A7AE4;
-}
+
 .input{
     width: 555px;
     height: 56px;
