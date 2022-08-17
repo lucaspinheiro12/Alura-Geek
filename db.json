@@ -20,6 +20,13 @@
       "valor": "9.99",
       "descricao": "Voluptas voluptatum quibusdam similique,\nclass debitis alias maecenas eveniet ridiculus, \nfacilis fusce! Ullam conubia? Sociis, \nminima malesuada habitasse distinctio sequi aliqua malesuada. \nQuisque deleniti proin expedita, aliquid litora. Iste recusandae? \nCommodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus,\ndolorum do. Animi porta anim magnam",
       "id": 3
+    },
+    {
+      "imagem": "imagens/bonecos.png",
+      "nome": "teste bonecos",
+      "valor": "799",
+      "descricao": "Voluptas voluptatum quibusdam similique,\nclass debitis alias maecenas eveniet ridiculus, \nfacilis fusce! Ullam conubia? Sociis, \nminima malesuada habitasse distinctio sequi aliqua malesuada. \n                            Quisque deleniti proin expedita, aliquid litora. Iste recusandae? \nCommodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus,\ndolorum do. Animi porta anim magnam",
+      "id": 4
     }
   ]
 }
