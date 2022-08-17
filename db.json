@@ -1,0 +1,25 @@
+{
+  "profile": [
+    {
+      "imagem": "imagens/boneco5.png",
+      "nome": "Produto teste 2",
+      "valor": "19.99",
+      "descricao": "Voluptas voluptatum quibusdam similique,\nclass debitis alias maecenas eveniet ridiculus, \nfacilis fusce! Ullam conubia? Sociis, \nminima malesuada habitasse distinctio sequi aliqua malesuada. \nQuisque deleniti proin expedita, aliquid litora. Iste recusandae? \nCommodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus,\ndolorum do. Animi porta anim magnam",
+      "id": 1
+    },
+    {
+      "imagem": "imagens/boneco5.png",
+      "nome": "Produto teste 1",
+      "valor": "100.75",
+      "descricao": "Voluptas voluptatum quibusdam similique,\nclass debitis alias maecenas eveniet ridiculus, \nfacilis fusce! Ullam conubia? Sociis, \nminima malesuada habitasse distinctio sequi aliqua malesuada. \nQuisque deleniti proin expedita, aliquid litora. Iste recusandae? \nCommodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus,\ndolorum do. Animi porta anim magnam",
+      "id": 2
+    },
+    {
+      "imagem": "imagens/boneco5.png",
+      "nome": "boneco",
+      "valor": "9.99",
+      "descricao": "Voluptas voluptatum quibusdam similique,\nclass debitis alias maecenas eveniet ridiculus, \nfacilis fusce! Ullam conubia? Sociis, \nminima malesuada habitasse distinctio sequi aliqua malesuada. \nQuisque deleniti proin expedita, aliquid litora. Iste recusandae? \nCommodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus,\ndolorum do. Animi porta anim magnam",
+      "id": 3
+    }
+  ]
+}
