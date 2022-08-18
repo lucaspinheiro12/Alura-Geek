@@ -11,50 +11,40 @@
         <link rel="stylesheet" href="../css/banner.css">
         <link rel="stylesheet" href="../css/produtos.css">
         <link rel="stylesheet" href="../css/rodape.css">
+        <link rel="stylesheet" href="../css/todos-produtos.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-        <title>Alura Geek</title>
+        <title>Alura Geek produtos</title>
     </head>
     <body>
         <header>
             <section class="topo__container">
                 <a href="index.html">
                     <img src="../imagens\Logo.png" class="topo__div__img" alt="logo">
-                </a>
+                </a>    
                 <form class="topo__container__pesquisa" data-pesquisa>
                     <div class="topo__pesquisa">
                         <input type="search" name="search" id="pesquisa" class="topo__pesquisa__input"
                          placeholder="busque aqui seu produto" data-tipo="pesquisa">
                         <input type="submit" id="btnLogin" class="topo__pesquisa__lupa__button" value>
                     </div>                    
-                </form>
-                <div class="topo__login">
-                    <a href="login.html">
-                        <button type="button" id="btnLogin" class="topo__login__button">Login</button>
-                    </a>
+                </form>  
+            </section>
+        </header>    
+        <main data-main>
+            <section class="produtosAll ">
+                <div class="prodtosAll__inicio">
+                    <div class="produtosAll__inicio-d">    
+                        <P> Produto não encontrado</P>
+                        <a href="produtos.html">
+                            <button class="produtosAll__botao">Todos produtos</button>
+                        </a>    
+                        </div>
                 </div>
             </section>
-        </header>
-        <main class="main" data-main>       
-            <section class="banner">
-                <div class="banner__texto">
-                    <h2>Dezembro Promocional</h2>
-                    <p>Produtos selecionados com até 33% de desconto</p>
-                    <a href="#todosProdutos"> <button class="banner__botao">Ver produtos</button> </a>
-                </div>
-            </section>
-            <section id="todosProdutos" class="produtos" data-produtos1>
-            </section>
-
-            <section id="todosProdutos" class="produtos" data-produtos2>
-            </section> 
-
-            <section id="todosProdutos" class="produtos" data-produtos3>               
-            </section>   
-                
         </main>
         <footer>
             <div class="rodape">
@@ -73,7 +63,7 @@
                     <form class="contato">
                         <div class="contato__input">
                             <p> Fale conosco</p>
-                            <div class="contato__input__div">
+                        <div class="contato__input__div">
                                 <input type="text" class="nome" placeholder="Nome" data-tipo="nome" pattern="[/A-Za-z'\s+].{1,40}"title="teste" required>
                                 <span class="input-mensagem-erro">Este campo não está válido</span>
                             </div>
@@ -96,6 +86,4 @@
     </body>
     <script src="../js/validacaoInput.js"></script>
     <script type="module" src="../js/pesquisa.js"></script>
-    <script type="module"  src="../js/index.js"></script>
-
-</html>   
+</html> 
