@@ -1,5 +1,5 @@
 const listaDeProdutos = () => {
-    return fetch(`https://my-json-server.typicode.com/lucaspinheiro12/Alura-Geek/profile`)
+    return fetch(`http://localhost:3000/profile`)
     .then( resposta => {
         if(resposta.ok){
         return resposta.json()
@@ -10,7 +10,7 @@ const listaDeProdutos = () => {
 } 
 
 const criaProdutos = (imagem, nome,valor, descricao ) =>  {
-    return fetch(`https://my-json-server.typicode.com/lucaspinheiro12/Alura-Geek/profile`, {
+    return fetch(`http://localhost:3000/profile/`, {
         method: 'POST',
         headers: {
             'content-type' : 'application/json'
@@ -32,7 +32,7 @@ const criaProdutos = (imagem, nome,valor, descricao ) =>  {
 }
 
 const detalheProduto = (id) => {
-    return fetch(`https://my-json-server.typicode.com/lucaspinheiro12/Alura-Geek/profile/${id}`)
+    return fetch(`http://localhost:3000/profile/${id}`)
     .then( resposta => {
         if(resposta.ok){
         return resposta.json()
@@ -42,7 +42,7 @@ const detalheProduto = (id) => {
 } 
 
 const atualizaProduto = (id ,imagem, nome, valor, descricao) =>{
-    return fetch(`https://my-json-server.typicode.com/lucaspinheiro12/Alura-Geek/profile/${id}`, {
+    return fetch(`http://localhost:3000/profile/${id}`, {
         method: 'PUT',
         headers:{
             'content-type' : 'application/json'
@@ -64,7 +64,7 @@ const atualizaProduto = (id ,imagem, nome, valor, descricao) =>{
 }
 
 const removeProduto = (id) => {
-    return fetch(`https://my-json-server.typicode.com/lucaspinheiro12/Alura-Geek/profile/${id}` , {
+    return fetch(`http://localhost:3000/profile/${id}` , {
         method:'DELETE'
     }).then(resposta =>{
         if(!resposta.ok){
@@ -75,7 +75,7 @@ const removeProduto = (id) => {
 
 const procuraProduto = () => {
 
-        return fetch(`https://my-json-server.typicode.com/lucaspinheiro12/Alura-Geek/profile`)
+        return fetch(`http://localhost:3000/profile`)
         .then( resposta => {
             if(resposta.ok){
             return resposta.json()

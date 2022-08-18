@@ -1,6 +1,5 @@
 import { clienteService } from "./service/service.js";
 
-
 const criaProdutoProcurado = (nome, imagem, valor, id) => {
 
     const linhaNovoProduto =  document.createElement('div')
@@ -35,8 +34,9 @@ const formulario =async ()=>{
 } 
 
  const procuraProdutosSemelhantes = async  (valorInput) => {  
-    const main = document.querySelector('[data-main]')
+    const main = document.querySelector('[data-main]')      
 
+            // produto encontrado
     const divPaiProcurados = document.createElement('div')
     const adicionaClasse =divPaiProcurados.classList.add("produtos__divs-data")
  
@@ -56,6 +56,7 @@ const formulario =async ()=>{
                     main.appendChild(divPaiProcurados)
                     divPaiProcurados.appendChild(criaProdutoProcurado(dados.nome,dados.imagem,dados.valor,dados.id));
                 } else{
+                    window.location.href = '../principal/produtosNaoEncontrado.html'
                    console.log("nao")
                 }
             }) 
