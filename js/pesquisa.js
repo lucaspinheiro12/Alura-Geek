@@ -26,7 +26,7 @@ const formulario =async ()=>{
     formulario.addEventListener('submit', async (evento) => {
          evento.preventDefault()
         const inputPesquisa = document.querySelector('[data-tipo="pesquisa"]').value
-        valor = inputPesquisa
+        valor = inputPesquisa.toUpperCase()
         console.log(valor)
         procuraProdutosSemelhantes(valor)
         return
@@ -50,7 +50,7 @@ const formulario =async ()=>{
 
              //   pega palavra por palavra em cada item e compara
             nomes.split(' ').forEach( nomeProduto => {  
-                if(nomeProduto  == valorInput.split(' ')){ 
+                if(nomeProduto.toUpperCase()  == valorInput.split(' ')){ 
                     const MainClass = main.classList.add('main-pesquisa') 
                     main.innerHTML='';
                     main.appendChild(divPaiProcurados)
