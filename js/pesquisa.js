@@ -26,7 +26,6 @@ const formulario =async ()=>{
          evento.preventDefault()
         const inputPesquisa = document.querySelector('[data-tipo="pesquisa"]').value
         valor = inputPesquisa.toUpperCase()
-        console.log(valor)
         procuraProdutosSemelhantes(valor)
         return
     })
@@ -39,8 +38,11 @@ const formulario =async ()=>{
             // produto encontrado
     const divPaiProcurados = document.createElement('div')
     const adicionaClasse =divPaiProcurados.classList.add("produtos__divs-data")
- 
-            
+    
+    let teste = false
+    
+        let resultado =[]
+        
         const procura = await clienteService.listaDeProdutos()  
 
              // pega os produtos no servidor e separa o nome do produtos em palavrar 
@@ -50,16 +52,24 @@ const formulario =async ()=>{
 
              //   pega palavra por palavra em cada item e compara
             nomes.split(' ').forEach( nomeProduto => {  
-                if(nomeProduto.toUpperCase()  == valorInput.split(' ')){ 
-                    const MainClass = main.classList.add('main-pesquisa') 
-                    main.innerHTML='';
-                    main.appendChild(divPaiProcurados)
-                    divPaiProcurados.appendChild(criaProdutoProcurado(dados.nome,dados.imagem,dados.valor,dados.id));
-                } else{
-                    window.location.href = '../principal/produtosNaoEncontrado.html'
-                   console.log("nao")
-                }
-            }) 
-        })  
+                if(nomeProduto.toUpperCase()  == valorInput.split(' ')){                    
+                    resultado.push(dadosProduto)
+                  return  teste = true 
+                }  
+            })   
+        }) 
+    if(teste){    
+        const MainClass = main.classList.add('main-pesquisa') 
+        main.innerHTML='';
+        main.appendChild(divPaiProcurados)
+        resultado.forEach(dados => {
+            divPaiProcurados.appendChild(criaProdutoProcurado(dados.nome,dados.imagem,dados.valor,dados.id));
+        })
+    } else{
+        window.location.href = '../principal/produtosNaoEncontrado.html'
+    }     
+       
 }
 formulario()
+
+  

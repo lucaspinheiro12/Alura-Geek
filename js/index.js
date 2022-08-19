@@ -60,21 +60,18 @@ const adicionaProdutosSesao = async() => {
 
     ids1.forEach(id=> {
         clienteService.detalheProduto(id).then(valor =>{
-            console.log(clienteService.detalheProduto(id))
             listaDeProdutos1.appendChild(criaCardProduto(valor.nome, valor.imagem, valor.valor, valor.id)) 
         })    
     })
 
     ids2.forEach(id=> {
         clienteService.detalheProduto(id).then(valor =>{
-            console.log(clienteService.detalheProduto(id))
             listaDeProdutos2.appendChild(criaCardProduto(valor.nome, valor.imagem, valor.valor, valor.id)) 
         })    
     })
 
     ids3.forEach(id=> {
         clienteService.detalheProduto(id).then(valor =>{
-            console.log(clienteService.detalheProduto(id))
             listaDeProdutos3.appendChild(criaCardProduto(valor.nome, valor.imagem, valor.valor, valor.id)) 
         })    
     })
