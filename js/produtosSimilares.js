@@ -19,9 +19,6 @@ const criaNovoProduto = (nome, imagem,valor, id) =>{
 
     return linhaNovoProduto
 }
-const sorteiaNumero = () => {
-    
-}
 
 
 const produtosSimilares =async () => {
